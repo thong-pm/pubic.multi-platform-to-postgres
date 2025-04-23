@@ -1,0 +1,15 @@
+{ 
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    "ms-python.python",
+    "wayou.vscode-todo-highlight",
+    "charliermarsh.ruff",
+    "mikestead.dotenv",
+    "SirTori.indenticator",
+    "ms-python.vscode-pylance",
+    "ms-vscode-remote.remote-wsl",
+    "redhat.vscode-yaml"
+  ],
+  // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+  "unwantedRecommendations": []
+}

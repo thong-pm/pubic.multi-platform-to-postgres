@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "taskId": { "type": ["null", "string"] },
+    "userId": { "type": ["null", "string"] },
+    "hours": { "type": ["null", "number"] },
+    "createdDate": { "type": ["null", "string"], "format": "date-time" },
+    "updatedDate": { "type": ["null", "string"], "format": "date-time" },
+    "trackedDate": { "type": ["null", "string"], "format": "date" },
+    "comment": { "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

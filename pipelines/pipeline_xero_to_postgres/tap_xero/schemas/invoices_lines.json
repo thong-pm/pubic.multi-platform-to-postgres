@@ -1,0 +1,16 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "parent_id": { "type": ["string"] }, 
+    "LineItemID": { "type": ["string"] },
+    "Description": { "type": ["null", "string"] },
+    "UnitAmount": { "type": ["null", "number"] },
+    "TaxType": { "type": ["null", "string"] },
+    "TaxAmount": { "type": ["null", "number"] },
+    "LineAmount": { "type": ["null", "number"] },
+    "AccountCode": { "type": ["null", "string"] },
+    "Quantity": { "type": ["null", "number"] },
+    "AccountID": { "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

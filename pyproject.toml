@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "pipeline-multi-platform"
+version = "0.1.0"
+description = "Orchestrates multiple Singer SDK pipelines"
+authors = ["Thong Pham"]
+homepage="https://thong-pm.github.io/"
+classifiers=["Programming Language :: Python :: 3 :: Only"]
+
+packages = [
+    { include = "pipelines" }
+]
+
+include = [
+"pipelines/pipeline_xero_to_postgres/tap_xero/schemas/*.json",
+"pipelines/pipeline_hubspot_to_postgres/tap_hubspot/schemas/*.json",
+"pipelines/pipeline_wrike_to_postgres/tap_wrike/schemas/*.json"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+schedule = "^1.2.0"
+python-dotenv = "0.21.0"
+
+pipelinewise-singer-python = "==1.*"
+pipelinewise-target-postgres = "==2.1.2"
+PyYAML = "==6.0"
+aiohttp = "==3.7.3"
+tenacity = "==9.0.0"
+
+dbt-core = "^1.5.7"
+dbt-postgres = "^1.5.7"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+
+[tool.poetry.scripts]
+tap-xero = "pipelines.pipeline_xero_to_postgres.tap_xero:main"
+tap-hubspot = "pipelines.pipeline_hubspot_to_postgres.tap_hubspot:main"
+tap-wrike = "pipelines.pipeline_wrike_to_postgres.tap_wrike:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

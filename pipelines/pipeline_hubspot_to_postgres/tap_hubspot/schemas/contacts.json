@@ -1,0 +1,13 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "id": { "type": ["string"] },
+    "email": { "type": ["null", "string"] },
+    "createdate": { "type": ["null", "string"], "format": "date-time" },
+    "firstname": { "type": ["null", "string"] },
+    "lastname": { "type": ["null", "string"] },
+    "hubspot_owner_id":{ "type": ["null", "string"] },
+    "updatedAt": { "type": ["null", "string"], "format": "date-time" }
+  },
+  "additionalProperties": false
+}

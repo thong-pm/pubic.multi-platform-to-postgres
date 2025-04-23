@@ -1,0 +1,37 @@
+extractors:
+  - name: tap-hubspot
+    settings:
+      - name: hubspot_token
+        env: HUBSPOT_TOKEN
+    select:
+      - deals
+      - deals_companies
+      - deals_contacts
+      - contacts
+      - contacts_companies
+      - companies
+      - goals
+      - owners
+      - teams
+      - engagements
+      # - engagements_companies
+      # - engagements_contacts
+      # - calls
+      - marketings
+      - forms
+      - form_submissions
+
+loaders:
+  - name: pipelinewise-target-postgres
+    settings:
+      - name: host
+        env: DB_HOST
+      - name: port
+        env: DB_PORT
+      - name: dbname
+        env: DB_DATABASE
+      - name: user
+        env: DB_USERNAME
+      - name: password
+        env: DB_PASSWORD
+        kind: password

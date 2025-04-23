@@ -1,0 +1,21 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "id": { "type": ["string"] },
+    "date_key": { "type": ["string"], "format": "date-time" },
+    "breakdown": { "type": ["string"] },
+    "visits": { "type": ["null", "number"] },
+    "visitors": { "type": ["null", "number"] },
+    "pageviewsMinusExits": { "type": ["null", "number"] },
+    "returningVisits": { "type": ["null", "number"] },
+    "rawViews": { "type": ["null", "number"] },
+    "standardViews": { "type": ["null", "number"] },
+    "bounces": { "type": ["null", "number"] },
+    "time": { "type": ["null", "number"] },
+    "timePerSession": { "type": ["null", "number"] },
+    "pageviewsPerSession": { "type": ["null", "number"] },
+    "bounceRate": { "type": ["null", "number"] },
+    "newVisitorSessionRate": { "type": ["null", "number"] }
+  },
+  "additionalProperties": false
+}

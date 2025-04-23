@@ -1,0 +1,8 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "id": { "type": ["string"] },
+    "parent_id": { "type": ["string"] },
+    "contacts_id": { "type": ["null", "string"] }  },
+  "additionalProperties": false
+}

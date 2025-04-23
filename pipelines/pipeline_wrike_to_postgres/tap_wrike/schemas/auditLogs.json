@@ -1,0 +1,17 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "id": { "type": ["string"] },
+    "operation": { "type": ["null", "string"] },
+    "userId": { "type": ["null", "string"] },
+    "userEmail": { "type": ["null", "string"], "format": "email" },
+    "eventDate": { "type": ["null", "string"], "format": "date-time" },
+    "ipAddress": { "type": ["null", "string"], "format": "string" },
+    "objectType": { "type": ["null", "string"] },
+    "objectName": { "type": ["null", "string"] },
+    "objectId": { "type": ["null", "string"] },
+    "details-Origin": { "type": ["null", "string"] },
+    "details-Attached To Name": { "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

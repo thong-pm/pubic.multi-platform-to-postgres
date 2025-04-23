@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  # - name: hubspot
+  #   schema: hubspot
+  #   tables:
+  #     - name: tasks
+  #       description: "Raw tasks data from Hubspot"
+  - name: wrike
+    schema: wrike
+    tables:
+      - name: tasks
+        description: "Raw tasks data from Wrike"
+  # - name: xero
+  #   schema: xero
+  #   tables:
+  #     - name: tasks
+  #       description: "Raw tasks data from Xero"

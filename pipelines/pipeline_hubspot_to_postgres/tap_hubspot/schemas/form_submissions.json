@@ -1,0 +1,11 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "id": { "type": ["string"] },
+    "formId": { "type": ["null","string"] },
+    "conversionId": { "type": ["null","string"] },
+    "submittedAt": { "type": ["null", "string"], "format": "date-time" },
+    "pageUrl": { "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,12 @@
+.venv/
+*.egg-info/
+*_config.json
+.env
+.env.dev
+.env.prod
+*.secret
+__pycache__/
+
+# ignore all files in temp_files folder but keep the .gitkeep file so the directory exists
+temp_files/*
+!temp_files/.gitkeep

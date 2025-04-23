@@ -1,0 +1,22 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "InvoiceID": { "type": ["string"] },
+    "Type": { "type": ["null", "string"] },
+    "InvoiceNumber": { "type": ["null", "string"] },
+    "Reference": { "type": ["null", "string"] },
+    "AmountDue": { "type": ["null", "number"] },
+    "AmountPaid": { "type": ["null", "number"] },
+    "AmountCredited": { "type": ["null", "number"] },
+    "CurrencyRate": { "type": ["null", "number"] },
+    "DateString": { "type": ["null", "string"], "format": "date-time" },
+    "DueDateString": { "type": ["null", "string"], "format": "date-time" },
+    "Status": { "type": ["null", "string"] },
+    "SubTotal": { "type": ["null", "number"] },
+    "TotalTax": { "type": ["null", "number"] },
+    "Total": { "type": ["null", "number"] },
+    "tenant_id":{ "type": ["null", "string"] },
+    "tenant_name":{ "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

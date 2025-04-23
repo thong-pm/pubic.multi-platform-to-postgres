@@ -1,0 +1,13 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "ID": { "type": ["string"] },
+    "parent_id": { "type": ["string"] },
+    "AccountID": { "type": ["string"] },
+    "AccountCode": { "type": ["null", "string"] },
+    "Period": { "type": ["null", "string"], "format": "date" },
+    "Amount": { "type": ["null", "number"] },
+    "Notes": { "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "BudgetID": { "type": ["string"] },
+    "Status": { "type": ["null", "string"] },
+    "Description": { "type": ["null", "string"] },
+    "Type": { "type": ["null", "string"] },
+    "UpdatedDateUTC": { "type": ["null", "string"], "format": "date-time" },
+    "tenant_id": { "type": ["null", "string"] },
+    "tenant_name": { "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

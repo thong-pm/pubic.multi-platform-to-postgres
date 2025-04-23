@@ -1,0 +1,21 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "id": { "type": ["string"] },
+    "accountId": { "type": ["null", "string"] },
+    "title": { "type": ["null", "string"] },
+    "status": { "type": ["null", "string"] },
+    "importance": { "type": ["null", "string"] },
+    "createdDate": { "type": ["null", "string"], "format": "date-time" },
+    "updatedDate": { "type": ["null", "string"], "format": "date-time" },
+    "completedDate": { "type": ["null", "string"], "format": "date-time" },
+    "dates-type": { "type": ["null", "string"] },
+    "dates-duration": { "type": ["null", "integer"] },
+    "dates-start": { "type": ["null", "string"], "format": "date-time" },
+    "dates-due": { "type": ["null", "string"], "format": "date-time" },
+    "scope": { "type": ["null", "string"] },
+    "customStatusId": { "type": ["null", "string"] },
+    "priority": { "type": ["null", "string"] }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+extractors:
+  - name: tap-xero
+    settings:
+      - name: client_id
+        env: XERO_CLIENT_ID
+      - name: client_secret
+        env: XERO_CLIENT_SECRET
+      - name: refresh_token
+        env: XERO_REFRESH_TOKEN
+    select:
+      - invoices
+      - invoices_lines
+      - budgets
+      - budgets_lines
+
+loaders:
+  - name: pipelinewise-target-postgres
+    settings:
+      - name: host
+        env: DB_HOST
+      - name: port
+        env: DB_PORT
+      - name: dbname
+        env: DB_DATABASE
+      - name: user
+        env: DB_USERNAME
+      - name: password
+        env: DB_PASSWORD
+        kind: password

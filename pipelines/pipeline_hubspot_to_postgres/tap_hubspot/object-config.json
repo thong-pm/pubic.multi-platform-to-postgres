@@ -1,0 +1,115 @@
+{
+  "deals": {
+    "associations": [
+      "companies",
+      "contacts"
+    ],
+    "properties": [
+      "amount",
+      "hs_forecast_amount",
+      "hubspot_team_id",
+      "hubspot_owner_id",
+      "amount_in_home_currency",
+      "deal_currency_code",
+      "closedate",
+      "createdate",
+      "dealname",
+      "dealstage",
+      "pipeline"
+    ]
+  },
+  "contacts": {
+    "associations": [
+      "companies"
+    ],
+    "properties": [
+      "email",
+      "createdate",
+      "firstname",
+      "lastname",
+      "hubspot_owner_id"
+    ]
+  },
+  "companies": {
+    "properties": [
+      "parent_id",
+      "companies_id",
+      "companies_type",
+      "createdate",
+      "domain",
+      "city",
+      "country",
+      "industry",
+      "state",
+      "hs_lastmodifieddate",
+      "hs_object_id",
+      "name",
+      "lifecyclestage",
+      "phone"
+    ]
+  },
+  "goals": {
+    "properties": [
+      "hs_goal_name",
+      "hs_target_amount",
+      "hs_start_datetime",
+      "hs_end_datetime",
+      "hs_created_by_user_id"
+    ]
+  },
+  "owners": {
+    "properties": [
+      "email",
+      "type",
+      "firstName",
+      "lastName",
+      "userId",
+      "userIdIncludingInactive",
+      "archived"
+    ]
+  },
+  "engagements": {
+    "associations": [
+      "companies",
+      "contacts"
+    ],
+    "properties": [
+      "hs_timestamp",
+      "hs_activity_type",
+      "hubspot_owner_id",
+      "hubspot_team_id",
+      "hs_call_disposition",
+      "hs_meeting_outcome",
+      "hs_engagement_type"
+    ]
+  },
+  "calls": {
+    "associations": [
+      "companies",
+      "contacts"
+    ],
+    "properties": [
+      "hs_call_disposition",
+      "hs_call_duration",
+      "hs_object_id",
+      "hubspot_owner_id",
+      "hubspot_team_id",
+      "hs_timestamp"
+    ]
+  },
+  "form_ids": [
+    "05e1ac89-eb7f-4d53-8227-8ffbbe47570b",
+    "0a793e11-980e-4348-b3a0-0c4348710bc2",
+    "1270f29a-86fc-4605-b5a7-8b896cbedd15",
+    "158d6f38-9643-4b10-8d66-069778e1538a",
+    "2bedc64e-f269-498e-9a90-5e46f91e4f7c",
+    "32ebad4f-bcbc-46da-84b3-610cddf6f235",
+    "6fd107cc-a0ab-4f6a-9460-c752eb1ae7ee",
+    "7e0dcbdc-6199-43f7-9f30-37964b4715f8",
+    "88727a4a-e461-44f1-b1aa-588e2b0df78d",
+    "8bd5aaf6-0f11-4337-8bfb-96d6da670894",
+    "92ed1000-5419-4a0d-bde8-a344a232747c",
+    "b31015d6-cccd-4e3b-81ca-93e06f8a6dba",
+    "e91fbfec-4cad-413f-a4a2-755f7cf440ff"
+  ]
+}

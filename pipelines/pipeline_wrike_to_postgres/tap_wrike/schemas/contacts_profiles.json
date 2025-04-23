@@ -1,0 +1,14 @@
+{
+  "type": ["null", "object"],
+  "properties": {
+    "parent_id": { "type": ["string"] },
+    "id": { "type": ["string"] },
+    "accountId": { "type": ["string"] },
+    "email": { "type": ["null", "string"], "format": "email" },
+    "role": { "type": ["null", "string"] },
+    "external": { "type": ["null","boolean"] },
+    "admin": { "type": ["null","boolean"] },
+    "owner": { "type": ["null","boolean"] }
+  },
+  "additionalProperties": false
+}

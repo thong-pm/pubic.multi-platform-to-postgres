@@ -1,0 +1,25 @@
+extractors:
+  - name: tap-wrike
+    settings:
+      - name: wrike_token
+        env: WRIKE_TOKEN
+    select:
+      - auditLogs
+      # - timeLogs
+      - contacts
+      - contacts_profiles
+      - tasks
+loaders:
+  - name: pipelinewise-target-postgres
+    settings:
+      - name: host
+        env: DB_HOST
+      - name: port
+        env: DB_PORT
+      - name: dbname
+        env: DB_DATABASE
+      - name: user
+        env: DB_USERNAME
+      - name: password
+        env: DB_PASSWORD
+        kind: password
