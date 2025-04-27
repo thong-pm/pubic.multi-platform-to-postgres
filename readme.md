@@ -1,6 +1,6 @@
 # Multi-Pipeline Orchestration Pipeline
 
-This project orchestrates multiple Singer data pipelines to extract data from various sources and load it into a PostgreSQL database using a central scheduler.  
+This project orchestrates multiple Singer data pipelines ([pipelinewise-singer-python](https://github.com/transferwise/pipelinewise-singer-python)) by TransferWise (now Wise). Extract data from various sources and load it into a PostgreSQL database using a central scheduler.  
 The views are created and maintain by dbt.
 
 Current available pipelines:
@@ -62,6 +62,8 @@ The `target-postgres` component reads the `SCHEMA`, `RECORD`, and `STATE` messag
 *   **Poetry:** MUST BE verison 2.1.2 - Python dependency management tool.
 *   **DBT:** Currently use verison 1.5.7 for both dbt-core and dbt-postgres
 *   **PostgreSQL:** PostgreSQL Version 16. Hosted on render.com
+
+See the `pyproject.toml` for dependency details. 
 
 ### 1. Set up Environment
 
