@@ -1,7 +1,7 @@
 # Multi-Pipeline Orchestration Pipeline
 ![image](https://drive.google.com/uc?export=view&id=1InODc3l5-2qGXMbb3mO97ts58uPedctn)
 
-This project orchestrates multiple Singer data pipelines ([pipelinewise-singer-python](https://github.com/transferwise/pipelinewise-singer-python)) by TransferWise (now Wise). Extract data from various sources and load it into a PostgreSQL database using a central scheduler.  
+This project orchestrates multiple Singer data pipelines ([pipelinewise-singer-python](https://github.com/transferwise/pipelinewise-singer-python)) by TransferWise (now Wise). Extract data from various sources, SaaS and load it into a PostgreSQL database using a central scheduler.  
 The views are created and maintain by dbt.
 
 Current available pipelines:
